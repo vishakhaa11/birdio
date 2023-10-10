@@ -1,0 +1,586 @@
+body{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
+
+.navbar{
+    top : 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.navbar > img{
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navlinks > a{
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.registerbtn{
+    margin-right: 10px;
+}
+
+.searchcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.searchcont > input{
+    font-family: "Nunito Sans", sans-serif;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+
+.searchcont > span{
+    margin-left: 10px;
+    font-size: 25px;
+    color: #000;
+}
+
+.registerbtn > a{
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.mainwrapper{
+    position: absoulte;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.left-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.right-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    position: fixed;
+    justify-content: flex-end;
+    right: 0;
+    top : 0;
+    margin-top: 80px;
+
+}
+
+.cont_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.user_info > span{
+    margin-right: 20px;
+    font-size: 30px;
+    color: #000;
+}
+
+.user_info > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user_info > div > P{
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.user_date{
+    margin:2px;
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+    color: grey;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.head1{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+.small_head{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: grey;
+    margin: 1px;
+    margin-left: 20px;
+
+}
+
+.head2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    width: 80%;
+    margin-left: 22px;
+}
+
+.third{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.third > div > button{
+    background-color: transparent;
+    border: none;
+}
+
+.third > button{
+    background-color: transparent;
+    border: none;
+}
+
+.line{
+    width: 100%;
+}
+
+.commentarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+    height: 100px;
+    font-family: "Nunito Sans", sans-serif;
+    resize: none;
+}
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fifth{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    left: 0;
+}
+
+.fifth > span{
+    font-size: 22px;
+    color: grey;
+    margin: 1px;
+    margin-left: 20px;
+}
+
+.headc{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    left : 5;
+}
+
+.sixth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.sixth > button{ 
+    margin: 5px;
+}
+
+.sixth > button:hover{
+    cursor: pointer;
+}
+
+.cancelbtn{
+    background-color: transparent;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(197, 19, 19);
+    border: 2px solid red;
+}
+
+.publishbtn{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(15, 164, 15);
+    border: 2px solid rgb(15, 164, 15);
+}
+
+.right_first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.right_first > button{
+    background-color: transparent;
+    width: 60%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.0);
+}
+
+.right_first > button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+
+}
+.right_first > button > span{
+    font-size: 20px;
+    color: grey;
+    margin: 5px;
+}
+
+.right_second{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.right_second > p{
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.right_second > p > span{
+    font-size: 20px;
+    color: grey;
+    margin: 5px;
+}
+
+.right_third{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_third > p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 19px;
+    color: rgb(92, 90, 90);
+}
+
+.follow_links{
+    display: flex;
+    flex-direction: column;
+}
+
+.que_cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.que_cont > p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 5px;
+    color: grey;
+}
+
+.homewrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.query_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.searchdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.searchdiv > span{
+    font-size: 30px;
+}
+
+.searchdiv > input{
+    margin: 10px;
+    width: 80%;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.query_option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.query_option > p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: grey;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.query_option > p > span{
+    font-size: 20px;
+    color: grey;
+    margin: 5px;
+}
+
+.card_slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid grey;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.card_account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.card_account > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card_account > div > span{
+    font-size: 30px;
+}
+
+.card_account > div > div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.card_account > div > div > span{
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card_account > div > div > span > p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.card_account > div > div > span > a{
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.user_date{
+    margin-top: -8px;
+    margin-left: 4px;
+}
+
+.showcase{
+    margin-left: 30px;
+}
+
+.showcase_content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.showcase_title{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.showcase_desc{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    margin: 1px;
+    margin-left: 40px;
+    margin-top: 5px;
+    
+}
+
+.postbtn{
+    margin-left: 40px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.right-login-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.right-login-options > a{
+    margin: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.loginbx{
+    width: 100%;
+}
+
+.loginbx > input{
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.logbtn{
+    background-color: transparent;
+    width: 20%;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-size: 15px;
+    margin-left: 40px;
+    padding: 8px;
+}
+
+
+.logbtn:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: #fff;
+}
+
+.register_head{
+    font-family: "Nunito Sans";
+    font-size: 24px;
+}
