@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 
-// require('./config/database')()
+require('./config/database')()
 
 // Engine Setup
 app.set("view engine", "ejs");
@@ -18,9 +18,10 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')))
 
 const home = require("./routes/home")
+const auth = require("./routes/auth")
 
 app.use("/" , home);
-
+app.use("/" , auth);
 // app.use('/api/v1/', managerPDF);
 // app.use('/api/v1/', auth);
 // app.use('/api/v1/', create_invoice);

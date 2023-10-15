@@ -1,8 +1,23 @@
 <p class="register_head">Register</p>
 <form action="/register" method="POST" class="loginbx">
-    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
     <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
     <input type="password" id="password" name="password" placeholder="Password"><br><br>
     <input type="text" id="cnfpassword" name="cnfpassword" placeholder="Confirm Password"><br><br>
-    <button class="logbtn" type="submit" >Register</button>
+    <button class="logbtn" id="registerbtn" type="submit" disabled>Register</button>
 </form>
+
+<script>
+    const cnfpassword = document.getElementById("cnfpassword")
+    cnfpassword.addEventListener('keyup', function() {
+        const password = document.getElementById("password")
+        const cnfpassword = document.getElementById("cnfpassword")
+        const registerbtn = document.getElementById("registerbtn")
+        if (password.value == cnfpassword.value) {
+            registerbtn.disabled = false;
+            password.style.borderColor = "green";
+        } else {
+            password.style.borderColor = "red";
+        }
+    })
+</script>

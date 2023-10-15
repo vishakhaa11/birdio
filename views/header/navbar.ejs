@@ -10,9 +10,34 @@
         <span class="material-symbols-outlined">search</span>
         <input type="text" placeholder="Search">
     </div>
-    <div class="registerbtn">
-        <a href="/login">Login</a>
-        <span> | </span>
-        <a href="/register">Register</a>
+
+    <div id="accountopt">
+
     </div>
 </div>
+
+<script>
+    const accountoptions = document.getElementById("accountopt")
+
+    const logout = ()=> {
+        localStorage.clear()
+        window.location.reload()
+    }
+
+    if(localStorage.getItem("token")){
+        accountoptions.innerHTML = `
+        <div class="registerbtn">
+            <a onclick="logout()">Logout</a>
+        </div>
+        `
+    }
+    else{
+        accountoptions.innerHTML = `
+        <div class="registerbtn">
+            <a href="/login">Login</a>
+            <span> | </span>
+            <a href="/register">Register</a>
+        </div>
+        `
+    }
+</script>
